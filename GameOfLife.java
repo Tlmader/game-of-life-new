@@ -71,8 +71,8 @@ public class GameOfLife {
    * that cells on outside edges check edge cells on the opposite side.
    *
    * @param grid a 2D array for a grid
-   * @param x a coordinate for the row
-   * @param x a coordinate for the column
+   * @param x a coordinate for a row
+   * @param y a coordinate for a column
    * @return the neighbor count
    */
   private static int getNeighbors(int[][] grid, int x, int y) {
