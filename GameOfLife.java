@@ -27,6 +27,9 @@ public class GameOfLife {
   private static void testCase() {
     int x = Integer.parseInt(input.nextLine());
     int y = Integer.parseInt(input.nextLine());
+    if (x < 3 || y < 3) {
+      System.out.println("Error: Size must be at least 3 x 3");
+    }
     int iters = Integer.parseInt(input.nextLine());
     int[][] grid = new int[x][y];
     for (int i = 0; i < x; i++) {
