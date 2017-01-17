@@ -22,7 +22,7 @@ public class GameOfLife {
   }
 
   /**
-   * Reads the information for a test case and evaluates.
+   * Reads the information for a test case and evaluates it.
    */
   private static void testCase() {
     int x = Integer.parseInt(input.nextLine());
