@@ -81,21 +81,21 @@ public class GameOfLife {
         if (i == 0 && j == 0) {
           continue;
         }
-        int modX = x + i;
-        int modY = y + j;
+        int adjX = x + i;
+        int adjY = y + j;
         int lastX = grid.length - 1;
         int lastY = grid[0].length - 1;
-        if (modX < 0) {
-          modX = lastX;
-        } else if (modX > lastX) {
-          modX = 0;
+        if (adjX < 0) {
+          adjX = lastX;
+        } else if (adjX > lastX) {
+          adjX = 0;
         }
-        if (modY < 0) {
-          modY = lastY;
-        } else if (modY > lastY) {
-          modY = 0;
+        if (adjY < 0) {
+          adjY = lastY;
+        } else if (adjY > lastY) {
+          adjY = 0;
         }
-        if (grid[modX][modY] == 1) {
+        if (grid[adjX][adjY] == 1) {
           n++;
         }
       }
