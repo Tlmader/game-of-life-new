@@ -67,7 +67,8 @@ public class GameOfLife {
   }
 
   /**
-   * Gets the neighbor count of a cell at a specific location on a grid.
+   * Gets the neighbor count of a cell at a specific location on a grid, such
+   * that cells on outside edges check edge cells on the opposite side.
    *
    * @param grid a 2D array for a grid
    * @param x a coordinate for the row
@@ -118,7 +119,7 @@ public class GameOfLife {
   }
 
   /**
-   * Called at the start of the program, reads the number of cases
+   * Called at the start of the program.
    *
    * @param args an array of command line arguments
    */
